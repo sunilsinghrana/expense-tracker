@@ -4,12 +4,10 @@ const cors = require('cors');
 
 require('dotenv').config({path: "./config.env"});
 
-const port = "https://expense-tracker-app-nxzs.onrender.com/";
+const port = 5000;
 
 // use middleware
-app.use(cors({
-    origin: ["http://localhost:5000", "https://expense-tracker-app-nxzs.onrender.com/"]
-}));
+app.use(cors());
 app.use(express.json());
 
 // mongodb connection
