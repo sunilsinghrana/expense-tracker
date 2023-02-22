@@ -4,11 +4,11 @@ const cors = require('cors');
 
 require('dotenv').config({path: "./config.env"});
 
-const port = "https://expense-tracker-k2ut.onrender.com/";
+const port = "https://expense-tracker-app-nxzs.onrender.com/";
 
 // use middleware
 app.use(cors({
-    origin: ["http://localhost:5000", "https://expense-tracker-k2ut.onrender.com/"]
+    origin: ["http://localhost:5000", "https://expense-tracker-app-nxzs.onrender.com/"]
 }));
 app.use(express.json());
 
